@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Els nostres usuaris són esportistes</h1>
+    </header>
+    <main>
+        <form id="formulario" action="" method="POST" target="" enctype="text/plain"> 
+            <label for="nom">Introdueix el teu nom:</label>
+            <input id="nom" class="uno" type="text" name="Nom" title="Introdueix el teu nom" minlength="2" maxlength="30" required /><br><br>
+            <label for="edat">Edat:</label>
+            <input id="edat" class="uno" type="text" name="edat" title="Introdueix la edat" required /><br><br>
+            <label for="esport">Esport que practica:</label>
+            <input id="esport" class="dos" type="text" name="esport" title="Introdueix esport" required /><br><br>
+            <label for="color">Color de la camiseta:</label>
+            <input id="color" class="uno" type="text" name="color" title="Introdueix color" required /><br><br>
+            <label for="temps">Des de quan practica l'esport:</label>
+            <input id="temps" class="uno" type="date" name="temps" title="Selecciona la data" required /><br><br>
+            <p><input type="button" value="Enviar" onclick="creaSection()"></p>
+        </form>
+        <article>Usuaris:<br><br>
+            <section id="futbol">Futbol
+                <ul></ul>
+            </section>
+            <section id="atletisme">Atletisme
+                <ul></ul>
+            </section>
+            <section id="tenis">Tenis
+                <ul></ul>
+            </section>
+            <section id="basket">Basket
+                <ul></ul>
+            </section>
+            <section id="altres">Altres
+                <ul></ul>
+            </section>
+        </article>
+    </main>
+    <script src="script/javascript.js"></script>
+</body>
+</html>

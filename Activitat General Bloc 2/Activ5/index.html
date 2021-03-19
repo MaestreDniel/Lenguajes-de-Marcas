@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 5</title>
+</head>
+<body>
+    <main>
+        <form action="mailto:dmaestre@cifpfbmoll.eu" method="POST" target="_blank" enctype="text/plain" onsubmit="return validacio()"> 
+            <label for="nom">Introdueix el teu nom:</label>
+            <input id="nom" type="text" name="Nom" title="Introdueix el teu nom" minlength="2" maxlength="30" required autofocus /><br><br>
+            <label for="mail">Direcció email:</label>
+            <input id="mail" type="email" name="email" title="Introdueix el patró xx@yy.z" required /><br><br>
+            <label for="telef">Telèfon:</label>
+            <input id="telef" type="text" name="telef" title="El número de telèfon ha de tenir nou dígits" pattern="[0-9]{9}"/><br><br>
+            <label for="pass">Contrasenya:</label>
+            <input id="pass" type="password" name="pass" title="La contrasenya ha de tenir entre 6 i 10 caràcters, i ha començar per una lletra majúscula o minúscula i acabar amb dos números" minlength="6" maxlength="10" required pattern="[a-zA-Z]{1}\w{3,7}[0-9]{2}" /><br><br>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </main>
+    <script src="script/javascript.js"></script>
+</body>
+</html>
