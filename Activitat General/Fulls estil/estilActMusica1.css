@@ -1,0 +1,166 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+body {
+    background-image: url(../Contingut/fondopartitura.png); /*Recordatori: Aquest css i la imatge viuen en diferents subdirectoris.
+    Per a que funcioni la ruta relativa, he de posar dos punts al principi*/
+}
+
+a:link {
+    color: rgb(204, 52, 52);
+}
+
+a:visited {
+    color: rgb(240, 177, 118)
+}
+
+a:active {
+    color: rgb(37, 131, 24)
+}
+
+a.index {
+    font-size: larger;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+}
+
+section h2 {
+    font-size: x-large;
+    text-align: center;
+}
+
+section {
+    width: 75%;
+    background-color: rgba(32, 136, 184, 0.2);
+}
+
+article {
+    background-color: rgba(32, 136, 184, 0.2); /*Fons color blau clar amb 20% opacitat*/;
+    padding-left: 3%;
+    padding-right: 5%
+}
+
+section, section p, section h2, section div {
+    margin-left: 0px;
+    float: left;
+}
+
+ul {
+    display: inline-block;
+    background-color: cornflowerblue;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    margin: 0 auto;
+    font-size: 0;
+    font-weight: bold;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: inherit;
+}
+
+ul li a {
+    display: inline-block; /*Serveix per ordenar els elements de la llista amb disposició horitzontal i no vertical*/
+    background-color: cornflowerblue;
+    padding: 2px 17px; /*Espai entre: la fila d'elements i els marges del menú horitzontal (1r nombre) i 
+    un element de la llista i el seguent (2n nombre)*/
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+img.uno {
+    width: 300px;
+    height: 400px;
+}
+
+img.uno:hover, img#exemple:hover  {
+    opacity: 0.7; /*Es transparenta un poc amb el ratolí damunt*/
+}
+
+aside {
+    font-size: large;
+    font-weight: 800;
+    margin-left: 3px;
+    padding: 5px;
+    display: inline-block;
+    font-style: italic;
+    background-color: rgba(175, 175, 209, 0.5) /*Fons color gris amb 50% opacitat*/
+}
+
+footer, footer address {
+    background-color: rgb(148, 148, 196);
+    padding-left: 2px;
+    padding-right: 5px;
+    margin-left: 0px;
+    float: left;
+}
+
+table caption {
+    font-size: large;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    border: black;
+    border-style: inset;
+    border-bottom: none;
+}
+
+table {
+    margin-left: 20%;
+    background-color: white;
+    border: black;
+    border-style: inset;
+    border-spacing: 20px 0px;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+table#Compas, table#Figures {
+    margin-left: 5%;
+    background-color: white;
+    border: black;
+    border-style: inset;
+    border-spacing: 20px 0px;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+th, td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.columnacurta {
+    width: 160px;
+}
+
+.principal {
+    font-weight: 700;
+    background-color: rgba(175, 175, 209, 0.7);
+}
+
+audio {
+    filter: grayscale(1) invert(80%) sepia(20%); /*Truc per a modificar l'aspecte del reproductor d'audio controls*/
+    height: 25px;
+}
+
+tr:nth-child(even) {
+    background-color: #e2e1e1;
+}
+
+tr:hover {
+    background-color: rgba(175, 175, 209, 0.5);
+}
